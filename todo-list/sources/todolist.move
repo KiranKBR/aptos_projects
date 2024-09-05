@@ -29,7 +29,7 @@ module todolist_addr::todolist {
         let todo_list = ToDoList {
             tasks: table::new(),
             task_counter: 0,
-            set_task_event: event::new_event_handle<Task>(account)
+            set_task_event: account::new_event_handle<Task>(account)
         };
 
         move_to(account, todo_list);
