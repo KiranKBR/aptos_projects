@@ -95,7 +95,9 @@ module todolist_addr::todolist {
             event::counter(
                 &borrow_global<ToDoList>(signer::address_of(&admin)).set_task_event
             );
-        assert!(task_count == 1, 4);
+        let todo_list = borrow_global<ToDoList>(signer::address_of(&admin));
+
+        assert!(task_count == todo_list.task_counter, 4);
         add_task(&admin, string::utf8(b"New Task another"));
         let todo_list = borrow_global<ToDoList>(signer::address_of(&admin));
 
@@ -104,7 +106,7 @@ module todolist_addr::todolist {
         // let todo_list = borrow_global_mut<ToDoList>(signer::address_of(&admin));// freeze inference involve while getting a task from todo list
 
         assert!(todo_list.task_counter == 2, 5);
-        let task_record = table::borrow(&todo_list.tasks, todo_list.task_counter-1);
+        let task_record = table::borrow(&todo_list.tasks, todo_list.task_counter - 1);
         assert!(task_record.task_id == 1, 6);
         assert!(task_record.completed == false, 7);
         assert!(task_record.content == string::utf8(b"New Task"), 8);
