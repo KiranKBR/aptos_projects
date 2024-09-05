@@ -6,3 +6,4 @@
 4. [Basic Token](https://github.com/KiranKBR/aptos_projects/tree/main/basic_tokens "Basic Token")
 5. [Generic Storage](https://github.com/KiranKBR/aptos_projects/tree/main/generic_storage "Generic Storage")
 6. [Company](https://github.com/KiranKBR/aptos_projects/tree/main/company "Company")
+7. [Collection](https://github.com/KiranKBR/aptos_projects/tree/main/collection "Collection")
