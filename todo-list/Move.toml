@@ -4,6 +4,8 @@ version = "1.0.0"
 authors = []
 
 [addresses]
+todolist_addr = "0x42"
+std = "0x1"
 
 [dev-addresses]
 
