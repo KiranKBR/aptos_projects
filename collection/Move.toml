@@ -1,0 +1,17 @@
+[package]
+name = "collection_project"
+version = "1.0.0"
+authors = []
+
+[addresses]
+# Collection = "0x12"
+
+[dev-addresses]
+# default = "0x12"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dev-dependencies]
