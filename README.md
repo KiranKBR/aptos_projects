@@ -7,3 +7,4 @@
 5. [Generic Storage](https://github.com/KiranKBR/aptos_projects/tree/main/generic_storage "Generic Storage")
 6. [Company](https://github.com/KiranKBR/aptos_projects/tree/main/company "Company")
 7. [Collection](https://github.com/KiranKBR/aptos_projects/tree/main/collection "Collection")
+8. [Football Card](https://github.com/KiranKBR/aptos_projects/tree/main/football_card "Football Card")
