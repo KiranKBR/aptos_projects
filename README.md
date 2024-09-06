@@ -9,3 +9,4 @@
 7. [Collection](https://github.com/KiranKBR/aptos_projects/tree/main/collection "Collection")
 8. [Football Card](https://github.com/KiranKBR/aptos_projects/tree/main/football_card "Football Card")
 9. [Staking](https://github.com/KiranKBR/aptos_projects/tree/main/staking "Staking")
+10. [Wallet](https://github.com/KiranKBR/aptos_projects/tree/main/multi_sender_wallet "Wallet")
