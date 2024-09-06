@@ -32,8 +32,12 @@ module 0xA2::Collection{
 
     public fun destroy(account: &signer) acquires Collection{
         let addr = signer::address_of(account);
-        let collection = move_from<Collection>(addr);
+        
+        // let collection = move_from<Collection>(addr);// first way wont work as Collection has not ability to be dropped 
+        // let _collection = move_from<Collection>(addr); // so we have to make Collection as dropable and 
 
+        //We have to manually move the collection to a variable and then drop it.
+        let collection = move_from<Collection>(addr);
         let Collection{items: _} = collection;
     }
 }
