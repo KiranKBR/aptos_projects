@@ -153,7 +153,9 @@ module my_addrx::Staking {
         assert!(staked_amount > 0, EINSUFFICIENT_STAKE);
         let apy = DEFAULT_APY;
         let reward_amount = (staked_amount * apy) / (10000);
-        let coins = my_addrx::BasicTokens::createCoin(reward_amount);
+        let coins = my_addrx::BasicTokens::createCoin(reward_amount);//we cant use coin struct directly here so we use createCoin function try below line  to check
+        // let coins = my_addrx::BasicTokens::Coin { value: reward_amount };
+
         my_addrx::BasicTokens::deposit(acc_own, coins);
     }
 
